@@ -1,0 +1,12 @@
+<Panel ux:Class="SunWithCloud">
+	<Image Row="1" File="Assets/cloud.png" Alignment="Center" Margin="0,50,0,50">
+		<Translation ux:Name="cloudImage"/>
+		<DropShadow Size="50"/>
+	</Image>
+
+	<Sun/>
+
+	<WhileTrue Value="true">
+		<Cycle Target="cloudImage.X" Low="-100" High="100" Frequency="0.2" Waveform="Sine"/>
+	</WhileTrue>
+</Panel>	

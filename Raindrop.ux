@@ -1,0 +1,6 @@
+<Panel ux:Class="Raindrop">
+    <Image Width="20" Height="20" File="Assets/raindrop.png"
+           Color="{dropletcolor}" Padding="1" Opacity="0.8">
+       <Rotation Degrees="-20"/>
+    </Image>
+</Panel>

@@ -1,0 +1,8 @@
+<Image Row="1" File="Assets/sun.png" Alignment="Center" ux:Name="sunImage" Color="#FFD50C" Margin="0,25,0,25" ux:Class="Sun">    
+	<Translation ux:Name="sunImage"/>
+	<Scaling Factor="1" ux:Name="sunScaling"/>
+	<WhileTrue Value="true">
+		<Spin Target="sunImage" Frequency="0.05"/>
+		<Cycle Target="sunScaling.Factor" Low="1.0" High="1.05" Frequency="1.5"/> 
+	</WhileTrue>
+</Image>

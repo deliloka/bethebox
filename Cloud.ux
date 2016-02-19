@@ -1,0 +1,6 @@
+<Panel ux:Class="Cloud">
+	<Image File="Assets/cloud.png" Alignment="Center" Color="#6C6A78">
+		
+			<DropShadow Size="5"  Distance="10"/>
+		</Image>
+</Panel>

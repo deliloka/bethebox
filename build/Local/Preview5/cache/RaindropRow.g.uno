@@ -1,0 +1,132 @@
+public partial class RaindropRow: Fuse.Controls.Grid
+{
+    outsideTheBox_FuseTranslation_float_Y_Property drop1Translation_Y_inst;
+    outsideTheBox_FuseTranslation_float_X_Property drop1Translation_X_inst;
+    outsideTheBox_FuseTranslation_float_Y_Property drop2Translation_Y_inst;
+    outsideTheBox_FuseTranslation_float_X_Property drop2Translation_X_inst;
+    outsideTheBox_FuseTranslation_float_Y_Property drop3Translation_Y_inst;
+    outsideTheBox_FuseTranslation_float_X_Property drop3Translation_X_inst;
+    outsideTheBox_FuseTranslation_float_Y_Property drop4Translation_Y_inst;
+    outsideTheBox_FuseTranslation_float_X_Property drop4Translation_X_inst;
+    outsideTheBox_FuseTranslation_float_Y_Property drop5Translation_Y_inst;
+    outsideTheBox_FuseTranslation_float_X_Property drop5Translation_X_inst;
+    internal Raindrop drop1;
+    internal Fuse.Translation drop1Translation;
+    internal Raindrop drop2;
+    internal Fuse.Translation drop2Translation;
+    internal Raindrop drop3;
+    internal Fuse.Translation drop3Translation;
+    internal Raindrop drop4;
+    internal Fuse.Translation drop4Translation;
+    internal Raindrop drop5;
+    internal Fuse.Translation drop5Translation;
+    static RaindropRow()
+    {
+    }
+    public RaindropRow()
+    {
+        InitializeUX();
+    }
+    void InitializeUX()
+    {
+        drop1Translation = new Fuse.Translation();
+        drop1Translation_Y_inst = new outsideTheBox_FuseTranslation_float_Y_Property(drop1Translation);
+        drop1Translation_X_inst = new outsideTheBox_FuseTranslation_float_X_Property(drop1Translation);
+        drop2Translation = new Fuse.Translation();
+        drop2Translation_Y_inst = new outsideTheBox_FuseTranslation_float_Y_Property(drop2Translation);
+        drop2Translation_X_inst = new outsideTheBox_FuseTranslation_float_X_Property(drop2Translation);
+        drop3Translation = new Fuse.Translation();
+        drop3Translation_Y_inst = new outsideTheBox_FuseTranslation_float_Y_Property(drop3Translation);
+        drop3Translation_X_inst = new outsideTheBox_FuseTranslation_float_X_Property(drop3Translation);
+        drop4Translation = new Fuse.Translation();
+        drop4Translation_Y_inst = new outsideTheBox_FuseTranslation_float_Y_Property(drop4Translation);
+        drop4Translation_X_inst = new outsideTheBox_FuseTranslation_float_X_Property(drop4Translation);
+        drop5Translation = new Fuse.Translation();
+        drop5Translation_Y_inst = new outsideTheBox_FuseTranslation_float_Y_Property(drop5Translation);
+        drop5Translation_X_inst = new outsideTheBox_FuseTranslation_float_X_Property(drop5Translation);
+        drop1 = new Raindrop();
+        drop2 = new Raindrop();
+        drop3 = new Raindrop();
+        drop4 = new Raindrop();
+        drop5 = new Raindrop();
+        var temp = new Fuse.Triggers.WhileTrue();
+        var temp1 = new Fuse.Animations.Cycle<float>(drop1Translation_Y_inst);
+        var temp2 = new Fuse.Animations.Cycle<float>(drop1Translation_X_inst);
+        var temp3 = new Fuse.Animations.Cycle<float>(drop2Translation_Y_inst);
+        var temp4 = new Fuse.Animations.Cycle<float>(drop2Translation_X_inst);
+        var temp5 = new Fuse.Animations.Cycle<float>(drop3Translation_Y_inst);
+        var temp6 = new Fuse.Animations.Cycle<float>(drop3Translation_X_inst);
+        var temp7 = new Fuse.Animations.Cycle<float>(drop4Translation_Y_inst);
+        var temp8 = new Fuse.Animations.Cycle<float>(drop4Translation_X_inst);
+        var temp9 = new Fuse.Animations.Cycle<float>(drop5Translation_Y_inst);
+        var temp10 = new Fuse.Animations.Cycle<float>(drop5Translation_X_inst);
+        this.ColumnCount = 5;
+        drop1.Name = "drop1";
+        drop1.Transforms.Add(drop1Translation);
+        drop2.Name = "drop2";
+        drop2.Transforms.Add(drop2Translation);
+        drop3.Name = "drop3";
+        drop3.Transforms.Add(drop3Translation);
+        drop4.Name = "drop4";
+        drop4.Transforms.Add(drop4Translation);
+        drop5.Name = "drop5";
+        drop5.Transforms.Add(drop5Translation);
+        temp.Value = true;
+        temp.Animators.Add(temp1);
+        temp.Animators.Add(temp2);
+        temp.Animators.Add(temp3);
+        temp.Animators.Add(temp4);
+        temp.Animators.Add(temp5);
+        temp.Animators.Add(temp6);
+        temp.Animators.Add(temp7);
+        temp.Animators.Add(temp8);
+        temp.Animators.Add(temp9);
+        temp.Animators.Add(temp10);
+        temp1.Low = 0f;
+        temp1.High = 23.6f;
+        temp1.Frequency = 1;
+        temp1.Waveform = Fuse.Animations.CycleWaveform.Sawtooth;
+        temp2.Low = 0f;
+        temp2.High = 5f;
+        temp2.Frequency = 1;
+        temp2.Waveform = Fuse.Animations.CycleWaveform.Sawtooth;
+        temp3.Low = 0f;
+        temp3.High = 23.6f;
+        temp3.Frequency = 1;
+        temp3.Waveform = Fuse.Animations.CycleWaveform.Sawtooth;
+        temp4.Low = 0f;
+        temp4.High = 5f;
+        temp4.Frequency = 1;
+        temp4.Waveform = Fuse.Animations.CycleWaveform.Sawtooth;
+        temp5.Low = 0f;
+        temp5.High = 23.6f;
+        temp5.Frequency = 1;
+        temp5.Waveform = Fuse.Animations.CycleWaveform.Sawtooth;
+        temp6.Low = 0f;
+        temp6.High = 5f;
+        temp6.Frequency = 1;
+        temp6.Waveform = Fuse.Animations.CycleWaveform.Sawtooth;
+        temp7.Low = 0f;
+        temp7.High = 23.6f;
+        temp7.Frequency = 1;
+        temp7.Waveform = Fuse.Animations.CycleWaveform.Sawtooth;
+        temp8.Low = 0f;
+        temp8.High = 5f;
+        temp8.Frequency = 1;
+        temp8.Waveform = Fuse.Animations.CycleWaveform.Sawtooth;
+        temp9.Low = 0f;
+        temp9.High = 23.6f;
+        temp9.Frequency = 1;
+        temp9.Waveform = Fuse.Animations.CycleWaveform.Sawtooth;
+        temp10.Low = 0f;
+        temp10.High = 5f;
+        temp10.Frequency = 1;
+        temp10.Waveform = Fuse.Animations.CycleWaveform.Sawtooth;
+        this.Children.Add(drop1);
+        this.Children.Add(drop2);
+        this.Children.Add(drop3);
+        this.Children.Add(drop4);
+        this.Children.Add(drop5);
+        this.Behaviors.Add(temp);
+    }
+}

@@ -1,0 +1,32 @@
+<Grid ux:Class="RaindropRow" ColumnCount="5">
+    <Raindrop ux:Name="drop1" >
+    	<Translation ux:Name="drop1Translation"/>
+    </Raindrop>
+    <Raindrop ux:Name="drop2">
+    	<Translation ux:Name="drop2Translation"/>
+    </Raindrop>
+    <Raindrop ux:Name="drop3">
+    	<Translation ux:Name="drop3Translation"/>
+
+    </Raindrop>
+    <Raindrop ux:Name="drop4">
+    	<Translation ux:Name="drop4Translation"/>
+
+    </Raindrop>
+   	<Raindrop ux:Name="drop5">
+    	<Translation ux:Name="drop5Translation"/>
+
+   	</Raindrop>
+   	<WhileTrue Value="true">
+			<Cycle Target="drop1Translation.Y" Low="0" High="23.6" Frequency="1" Waveform="Sawtooth"/>
+			<Cycle Target="drop1Translation.X" Low="0" High="5" Frequency="1" Waveform="Sawtooth"/>
+			<Cycle Target="drop2Translation.Y" Low="0" High="23.6" Frequency="1" Waveform="Sawtooth"/>
+			<Cycle Target="drop2Translation.X" Low="0" High="5" Frequency="1" Waveform="Sawtooth"/>
+			<Cycle Target="drop3Translation.Y" Low="0" High="23.6" Frequency="1" Waveform="Sawtooth"/>
+			<Cycle Target="drop3Translation.X" Low="0" High="5" Frequency="1" Waveform="Sawtooth"/>
+			<Cycle Target="drop4Translation.Y" Low="0" High="23.6" Frequency="1" Waveform="Sawtooth"/>
+			<Cycle Target="drop4Translation.X" Low="0" High="5" Frequency="1" Waveform="Sawtooth"/>
+			<Cycle Target="drop5Translation.Y" Low="0" High="23.6" Frequency="1" Waveform="Sawtooth"/>
+			<Cycle Target="drop5Translation.X" Low="0" High="5" Frequency="1" Waveform="Sawtooth"/>
+   	</WhileTrue>
+</Grid>

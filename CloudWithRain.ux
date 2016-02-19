@@ -1,0 +1,11 @@
+<Grid ux:Class="CloudWithRain" Row="1" Width="500" ColumnCount="1"  Margin="10" Alignment="VerticalCenter" Rows="4*,1*,1*,1*">
+	<Cloud Row="0"/>
+	<RaindropRow Width="100" Row="0" Alignment="Bottom" ux:Name="raindropRow1" />
+	<RaindropRow Width="100" Row="1" Margin="10,0,0,0" ux:Name="raindropRow2" />
+	<RaindropRow Width="100" Margin="20,0,0,0" Row="2" ux:Name="raindropRow3" />
+	<RaindropRow Width="100" Row="3" Margin="30,0,0,0" ux:Name="raindropRow4" />
+	<WhileTrue Value="true">
+		<Cycle Frequency="1" Low="1" High="0.5" Target="raindropRow3.Opacity"   Waveform="Sawtooth"/>
+			<Cycle Frequency="1" Low="0.5" High="0" Target="raindropRow4.Opacity"      Waveform="Sawtooth"/>
+	</WhileTrue>
+</Grid>
