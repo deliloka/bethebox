@@ -1,0 +1,21 @@
+<Grid ColumnCount="1" Rows="3*, 2*, 1*, 1*" ux:Class="ResultView">
+      	
+      	<Text Row="0" TextAlignment="Center" TextColor="#FFF"  FontSize="48" Alignment="VerticalCenter" Value="{locationName}" TextWrapping="Wrap" ux:Name="locationNameText">
+      		<DropShadow/>
+      	</Text>
+      	<Image Row="0" Url="{locationImageUrl}" StretchMode="UniformToFill">
+			<Blur Radius="2"/>      		
+		</Image>
+
+		<CloudWithRain Row="1" Visibility="{cloudwithrainVisibility}"/>
+		<Sun Row="1" Visibility="{sunVisibility}"/>
+      	<SunWithCloud Row="1" Visibility="{sunwithcloudVisibility}"/>
+
+      	<Panel Row="2">
+                        <TextInput TextColor="#000" FontSize="22" CaretColor="#000" PlaceholderColor="#999" PlaceholderText="Søk på sted..." Alignment="Bottom" ux:Name="textInputSearch" ValueChanged="{searchString}" Value="{searchString}"/>
+                  
+
+            </Panel>
+            <Button Row="3" Text="Søk" Margin="20" Clicked="{searchClick}">
+            </Button>
+     </Grid>

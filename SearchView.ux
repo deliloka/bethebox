@@ -1,0 +1,17 @@
+<DockPanel ux:Class="SearchView">
+	<JavaScript File="Search.js"/>
+	
+		<Text Value="{data}" TextColor="#000" Background="#EFE590" Alignment="Top" Height="50" >
+			
+	
+		</Text>
+	
+
+	<Panel >
+                        <TextInput TextColor="#000" FontSize="22" CaretColor="#000" PlaceholderColor="#999" PlaceholderText="Søk på sted..." Alignment="Bottom" ux:Name="textInputSearch" ValueChanged="{searchForPlace}" Value="{searchString}"/>
+                  
+
+    </Panel>
+           
+	
+</DockPanel>
